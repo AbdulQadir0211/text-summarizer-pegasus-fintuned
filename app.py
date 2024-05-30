@@ -18,7 +18,7 @@ def extract_text_from_pdf(pdf_path):
 
 @st.cache(allow_output_mutation=True)
 def get_model():
-    tokenizer = AutoTokenizer.from_pretrained("abdulqadir02/Pegasus-fine-tuned")
+    tokenizer = AutoTokenizer.from_pretrained("google/pegasus-cnn_dailymail")
     model = AutoModelForSeq2SeqLM.from_pretrained("abdulqadir02/Pegasus-fine-tuned")
     return tokenizer, model
 
