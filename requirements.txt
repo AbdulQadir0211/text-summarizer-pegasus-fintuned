@@ -1,0 +1,8 @@
+streamlit
+torch
+transformers
+transformers[sentencepiece]
+datasets
+py7zr
+accelerate
+PyPDF2
